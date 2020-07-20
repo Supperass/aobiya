@@ -41,12 +41,12 @@ li::before, li::after {
 }
 
 li::before {
-  z-index: -10;
+  z-index: 10;
   clip-path: polygon(0 0, 100% 0, 100% 20%, 20% 20%, 20% 100%, 0 100%);
   webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 20% 20%, 20% 100%, 100% 100%);
 }
 li::after {
-  z-index: 10;
+  z-index: 20;
   clip-path: polygon(80% 20%, 100% 0, 100% 100%, 0% 100%, 20% 80%, 80% 80%);
   webkit-clip-path: polygon(80% 0, 100% 0, 100% 100%, 0% 100%, 0 80%, 80% 80%);
 }
@@ -125,6 +125,7 @@ img{
   box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.3);
   transition-property: transform;
   transition-duration: .3s;
+  z-index: 15;
 }
 
 img:hover{
@@ -205,7 +206,7 @@ img:hover{
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
   <h2 style="color: #fff;">照片墙</h2>
-  <img src="./img/WechatIMG88.jpeg" alt="">
+  <!-- <img src="./img/WechatIMG88.jpeg" alt=""> -->
 
 <ul>
     <li><img src="./img/WechatIMG88.jpeg" alt=""></li>
